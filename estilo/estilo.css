@@ -1,210 +1,22 @@
 html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
-    text-align: center;
-    font-weight: bold;
-    scroll-behavior: smooth;
+    margin: 0; 
+    padding: 0; /*efeito de preenchimento*/
+    height: 100%; /*altura da pagina*/
+    font-family: 'Titillium Web', sans-serif; /**/
+    text-align: center; /*centralizar texto*/
+    font-weight: bold; /* negrito*/
+    scroll-behavior: smooth; /* rolagem suave */
 }
+
 nav {
-   top: 0; 
-   width: 100%;
-   position:fixed;
-   background-color: rgba(255, 230, 5, 0.884);
-   z-index: 1;
+    top: 0; 
+    width: 100%; /* largura da barra de navegação */
+    position:fixed; /* bloco de navegação fixado*/
+    background-color: rgba(255, 230, 5, 0.884);
+    z-index: 1; /* */
 }
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    
-}
-
-a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.795);
-    font-size: 1rem;
-    line-height: 1.5rem;
-    
-}
-
-.fundo2 {
-    background-image: url("../imagens/bg02.jpg"); 
-}
-.fundo3 {
-    background-image: url("../imagens/bg03.jpg"); 
-}
-.fundo4 {
-    background-image: url("../imagens/bg04.jpg"); 
-}
-@keyframes muda_imagem { 
-    0%  { background-image: url("../imagens/bg01.jpg") ;} 
-    33% { background-image: url("../imagens/bg02.jpg") ;} 
-    66% { background-image: url("../imagens/bg03.jpg") ;} 
-    100% { background-image: url("../imagens/bg01.jpg") ;} 
-}
-.fundo1, .fundo2, .fundo3, .fundo4 {
-    position: relative;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-.destaque {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    color: rgba(0, 0, 0, 0.795) ;
-    background-color: rgba(255, 230, 5, 0.884);
-    padding: 10px;
-    width: 40%;
-    font-size: 1rem;
-    filter: drop-shadow(4px 4px gainsboro);
-    margin: auto;
-}
-.conteudo {
-    color: rgb(0, 0, 0);
-    background-color: gainsboro;
-    padding: 90px 25px;
-}
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background: rgba(255, 230, 5, 0.884);
-    color: rgb(0, 0, 0);
-    width: 100%;
-    margin: 10px auto;
-    box-sizing: border-box;
-}
-
-.fotos .container {
-    background: none;
-}
-.fotos .container img {
-    border-radius: 15%;
-    padding: 10px;
-    margin-bottom: 20px;
-    width: 80%;
-}
-
-.texto {
-    text-align: justify;
-}
-
-h3 {
-    text-transform: uppercase;
-    color: rgb(0, 0, 0);
-}
-img {
-    width: 100%;
-}
-.clipe {
-    width: 90%;
-    border: 5px ridge darkseagreen;
-}
-form {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin: 30px auto;
-}
-label , #qtd, #dest, .botao {
-    font-size: 1.25rem;
-    padding: 5px;
-    border-radius: 4px;
-    width: 100%;
-} 
-#qtd , #dest , .botao {
-    font-family: inherit;
-    text-align: center;
-    border: none;
-    margin-bottom: 20px;
-}
-label, .botao {
-    background-color: rgb(177, 175, 175);
-    color: rgb(0, 0, 0);
-}
-
-#quadro_animado {
-    
-    margin: auto;
-    background-size: cover;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    animation-name: muda_imagem;
-}
-#nome, #email, #fone {
-    font-family: inherit;
-    font-size: 1rem;
-    width: 100%;
-    border: none;
-    border-radius: 4px;
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 12px 12px 40px;
-    margin-bottom: 20px;    
-}
-
-
-footer {
-    color: rgb(0, 0, 0);
-    background-color: rgba(255, 230, 5, 0.884);
-    padding: 15px;
-}
-
-@media (min-width: 768px) {
-    nav {
-        padding: 20px 0px;
-    }
-    ul {
-        padding: 5px;
-    }
-    li {
-        width: 20%;
-        float: left;
-    }
-    ul :hover {
-        transform:  rotate(-5deg);
-    }
-    a {
-        font-size: 1.25rem;
-    }
-    .container {
-        flex-wrap: nowrap;
-    }
-    .fotos .container {
-        flex-wrap: wrap;
-    }
-    .fotos .container img {
-        width: 20%;
-        filter: none;
-        
-    }
-    .fotos img:hover {
-        filter: grayscale(90%);
-    }
-    .destaque {
-        padding: 10px;
-        font-size: 2rem;
-        width: 25%;
-        transition: width 1s;
-    }
-    .destaque:hover {
-        width: 40%;
-    }
-    .conteudo {
-        padding: 70px;
-    }
-    .clipe {
-        width: 50%;
-    }
-    .quadro_animado {
-        width: 620px;
-        height: 400px;
-    }   
+    padding: 0;   
 }
