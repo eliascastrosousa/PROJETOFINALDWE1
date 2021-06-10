@@ -17,17 +17,17 @@
         <ul class="botoes">
             <li> <a href="#top"> Home </a> </li>
             <li> <a href="#cat"> Catalogo </a> </li>
-            <li> <a href="#quadro_animado"> Simulação </a> </li>
+            <li> <a href="#sim"> Simulação </a> </li>
             <li> <a href="#fale">Fale conosco </a> </li>
         </ul>
     </nav>
 
-    <div class="fundo1">
-        <div class="destaque"> Os Clássicos </div>
+    <div class="fundo1"  id="quadro_animado">
+        <div class="destaque"> A aluguel de Veiculos </div>
     </div>
     <div id="fun" class="conteudo texto">
         <h3>O Aluguel</h3>
-        Somos uma startup com o objetivo de deixar você mais perto do seu sonho de pilotar uma maquina! Trabalhamos
+        Somos uma pequena locadora com o objetivo de deixar você mais perto do seu sonho de pilotar uma maquina! Trabalhamos
         aproximando você do nosso parceiro colecionador, para experimentar aquela sensação que marcou época!
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus nostrum, totam nesciunt libero unde
         inventore! Inventore animi earum nihil delectus explicabo iusto consequuntur nemo quisquam reprehenderit
@@ -37,38 +37,45 @@
         perferendis. Itaque numquam quia reprehenderit molestiae placeat quod, optio obcaecati dolorem dolores libero
         eius ad dolorum quibusdam quaerat dignissimos?
     </div>
-    <div class="fundo2" id="cat">
+    <div class="fundo2" >
         <div class="destaque" >#alugueclassicos</div>
     </div>
 
-    <div  class="conteudo">
-        <h3>Galeria</h3>
+    <div  class="conteudo" id="cat">
+        <h3>Catalogo</h3>
         <main class="fotos">
-            <div class="container">
-                <img src="imagens/fotocat01.jpg" alt="Cadillac" title="Cadillac">
-                <img src="imagens/fotocat02.jpg" alt="Kombi" title="Kombi">
-                <img src="imagens/fotocat03.jpg" alt="Mustang" title="Mustang">
-                <img src="imagens/fotocat04.jpg" alt="Fusca" title="Fusca">
+            <div class="container"> <!-- catalogo de carros -->
+                <img src="imagens/foto01.jpg" alt="Cadillac" title="Cadillac">
+                <img src="imagens/foto02.jpg" alt="Kombi" title="Kombi">
+                <img src="imagens/foto03.jpg" alt="Mustang" title="Mustang">
+                <img src="imagens/foto04.jpg" alt="Fusca" title="Fusca">
+                <img src="imagens/foto05.jpg" alt="Cadillac" title="Cadillac">
+                <img src="imagens/foto06.jpg" alt="Kombi" title="Kombi">
+                <img src="imagens/foto07.jpg" alt="Mustang" title="Mustang">
+                <img src="imagens/foto08.jpg" alt="Fusca" title="Fusca">
+                
             </div>
         </main>
         
     </div>
-    <div class="fundo3" id="quadro_animado">
+    <div class="fundo3" >
         <div class="destaque">Nossos Parceiros</div>
     </div>
 
     <div  class="conteudo">
         <main class="fotos">
-            <div class="container">
-                <img src="imagens/marca01.png" alt="Ford">
-                <img src="imagens/marca02.png" alt="Ford">
-                <img src="imagens/marca03.png" alt="Ford">
-                <img src="imagens/marca04.png" alt="Ford">
+            <div class="container" id="sim">
+                <img src="imagens/marca01.png" alt="BMW"  >
+                <img src="imagens/marca02.png" alt="Audi">
+                <img src="imagens/marca03.png" alt="Mercedes">
+                
             </div>
 
             <h2>Simulação</h2>
     
         <form method="get">
+            <label for="qtd">Nome do Carro</label>
+            <input type="text" name="qtd" id="qtd" placeholder="Ex: Mustang"/>
             <label for="qtd">Quantidade de Horas</label>
             <input type="number" name="qtd" id="qtd"/>
             <button type="button" class="botao" onclick="confirmar()">Calcular</button>
@@ -79,12 +86,12 @@
         
     </div>
 
-    <div class="fundo4" id="fale">
+    <div class="fundo4" >
         <div class="destaque" >Fale conosco</div>
     </div>
 
-    <div id="fun" class="conteudo">
-        <h2>Seja Nosso parceiro</h2>
+    <div id="fale"  class="conteudo" >
+        <h2  >Seja Nosso parceiro</h2>
         <h3>Você tem um carro e deseja disponibiliza-lo? Cadastre-se e entraremos em contato com você!</h3>
         <h3>Formulario de parceria - Tire suas Duvidas</h3>
         <form method="get">

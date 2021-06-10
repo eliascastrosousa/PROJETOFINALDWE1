@@ -28,9 +28,7 @@ a {
     line-height: 1.5rem;
     
 }
-.fundo1 {
-    background-image: url("../imagens/bg01.jpg");
-}
+
 .fundo2 {
     background-image: url("../imagens/bg02.jpg"); 
 }
@@ -39,6 +37,12 @@ a {
 }
 .fundo4 {
     background-image: url("../imagens/bg04.jpg"); 
+}
+@keyframes muda_imagem { 
+    0%  { background-image: url("../imagens/bg01.jpg") ;} 
+    33% { background-image: url("../imagens/bg02.jpg") ;} 
+    66% { background-image: url("../imagens/bg03.jpg") ;} 
+    100% { background-image: url("../imagens/bg01.jpg") ;} 
 }
 .fundo1, .fundo2, .fundo3, .fundo4 {
     position: relative;
@@ -122,8 +126,8 @@ label , #qtd, #dest, .botao {
     margin-bottom: 20px;
 }
 label, .botao {
-    background-color: darkblue;
-    color: aliceblue;
+    background-color: rgb(177, 175, 175);
+    color: rgb(0, 0, 0);
 }
 
 #quadro_animado {
@@ -145,14 +149,7 @@ label, .botao {
     padding: 12px 12px 12px 40px;
     margin-bottom: 20px;    
 }
-@keyframes muda_imagem { 
-    0%   { background-image: url("../imagens/fotocat01.jpg") ;} 
-    20%  { background-image: url("../imagens/fotocat02.jpg") ;} 
-    40%  { background-image: url("../imagens/fotocat03.jpg") ;} 
-    60%  { background-image: url("../imagens/fotocat04.jpg") ;} 
-    80%  { background-image: url("../imagens/fotocat05.jpg") ;} 
-    100% { background-image: url("../imagens/fotocat01.jpg") ;} 
-}
+
 
 footer {
     color: rgb(0, 0, 0);
