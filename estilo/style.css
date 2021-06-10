@@ -19,13 +19,11 @@ ul {
     margin: 0;
     padding: 0;   
 }
-
 a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.795);
     font-size: 1rem;
-    line-height: 1.5rem;
-    
+    line-height: 1.5rem; 
 }
 
 .fundo2 {

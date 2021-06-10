@@ -7,7 +7,6 @@ html, body {
     font-weight: bold; /* negrito*/
     scroll-behavior: smooth; /* rolagem suave */
 }
-
 nav {
     top: 0; 
     width: 100%; /* largura da barra de navegação */
@@ -16,7 +15,49 @@ nav {
     z-index: 1; /* */
 }
 ul {
-    list-style-type: none;
+    list-style-type: none; /* */
     margin: 0;
     padding: 0;   
+}
+a {
+    text-decoration: none; /* limpando os links */
+    color: rgba(0, 0, 0, 0.795);
+    font-size: 1rem; /* tamanho da fonte */
+    line-height: 1.5rem; 
+}
+@keyframes muda_imagem { /* animação de transição*/
+    0%  { background-image: url("../imagens/bg01.jpg") ;} 
+    33% { background-image: url("../imagens/bg02.jpg") ;} 
+    66% { background-image: url("../imagens/bg03.jpg") ;} 
+    100% { background-image: url("../imagens/bg01.jpg") ;} 
+}
+.fundo2 {
+    background-image: url("../imagens/bg02.jpg"); 
+}
+.fundo3 {
+    background-image: url("../imagens/bg03.jpg"); 
+}
+.fundo4 {
+    background-image: url("../imagens/bg04.jpg"); 
+}
+
+.fundo1, .fundo2, .fundo3, .fundo4 {
+    position: relative; 
+    height: 100%;
+    background-size: cover; /* tamanho do fundo, esticando a imagem e prenchendo todo o espaço com ela */
+    background-position: center;
+    background-attachment: fixed;
+}
+.destaque {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    color: rgba(0, 0, 0, 0.795) ;
+    background-color: rgba(255, 230, 5, 0.884);
+    padding: 10px;
+    width: 40%;
+    font-size: 1rem;
+    filter: drop-shadow(4px 4px gainsboro);
+    margin: auto;
 }
