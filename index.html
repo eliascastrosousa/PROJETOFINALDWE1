@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aluguel de Veiculos | Elias Castro</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="icon" href="../imagens/logohead.png" />
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
@@ -18,9 +16,9 @@
     <nav>
         <ul class="botoes">
             <li> <a href="#top"> Home </a> </li>
-            <li> <a href="#cat"> Catalogo | Simulação</a> </li>
-            <li> <a href="#ani"> Seja nosso Parceiro </a> </li>
-            <li> <a href="#faleconosco">Fale conosco </a> </li>
+            <li> <a href="#cat"> Catalogo </a> </li>
+            <li> <a href="#quadro_animado"> Simulação </a> </li>
+            <li> <a href="#fale">Fale conosco </a> </li>
         </ul>
     </nav>
 
@@ -39,11 +37,11 @@
         perferendis. Itaque numquam quia reprehenderit molestiae placeat quod, optio obcaecati dolorem dolores libero
         eius ad dolorum quibusdam quaerat dignissimos?
     </div>
-    <div class="fundo2">
-        <div class="destaque">#alugueclassicos</div>
+    <div class="fundo2" id="cat">
+        <div class="destaque" >#alugueclassicos</div>
     </div>
 
-    <div id="cat" class="conteudo">
+    <div  class="conteudo">
         <h3>Galeria</h3>
         <main class="fotos">
             <div class="container">
@@ -53,35 +51,13 @@
                 <img src="imagens/fotocat04.jpg" alt="Fusca" title="Fusca">
             </div>
         </main>
-        <h2>Simulação</h2>
-
-        <h4>Selecione o Carro:</h4>
-        <form action="" method="get">
-            <select class="form-select" aria-label="Default select example">
-                <option selected id="opcoes">Abra e Selecione</option>
-                <option value="1" id="opcoes">Cadillac</option>
-                <option value="2" id="opcoes">Kombi</option>
-                <option value="3" id="opcoes">Mustang</option>
-                <option value="4" id="opcoes">Fusca</option>
-            </select>
-            <br>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">Quantas Horas:</span>
-                <input type="number" class="form-control" placeholder="2" id="qtd">
-            </div>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button class="btn btn-warning me-md-2" type="button" onclick="confirmar()">Confirmar</button>
-                <button class="btn btn-warning me-md-2" type="reset">Limpar</button>
-            </div>
-            <div id="msg"></div>
-
-        </form>
+        
     </div>
     <div class="fundo3" id="quadro_animado">
         <div class="destaque">Nossos Parceiros</div>
     </div>
 
-    <div id="ani" class="conteudo">
+    <div  class="conteudo">
         <main class="fotos">
             <div class="container">
                 <img src="imagens/marca01.png" alt="Ford">
@@ -89,31 +65,34 @@
                 <img src="imagens/marca03.png" alt="Ford">
                 <img src="imagens/marca04.png" alt="Ford">
             </div>
+
+            <h2>Simulação</h2>
+    
+        <form method="get">
+            <label for="qtd">Quantidade de Horas</label>
+            <input type="number" name="qtd" id="qtd"/>
+            <button type="button" class="botao" onclick="confirmar()">Calcular</button>
+            <input type="reset" value="Limpar" class="botao">
+            <div id="msg"></div>
+        </form>
         </main>
-        <h2>Seja Nosso parceiro</h2>
-        <h3>Você tem um carro e deseja disponibiliza-lo? Cadastre-se e entraremos em contato com você!</h3>
+        
     </div>
 
-    <div class="fundo4">
-        <div class="destaque" id="faleconosco">Fale conosco</div>
+    <div class="fundo4" id="fale">
+        <div class="destaque" >Fale conosco</div>
     </div>
 
     <div id="fun" class="conteudo">
+        <h2>Seja Nosso parceiro</h2>
+        <h3>Você tem um carro e deseja disponibiliza-lo? Cadastre-se e entraremos em contato com você!</h3>
         <h3>Formulario de parceria - Tire suas Duvidas</h3>
-        <form action="" method="get">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Envie sua mensagem</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                <br>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button class="btn btn-warning me-md-2" type="button">Enviar</button>
-                    <button class="btn btn-warning me-md-2" type="reset">Limpar</button>
-                </div>
-            </div>
+        <form method="get">
+    
+            <input type="text" name="nome" id="nome" maxlength="38" required placeholder="Nome">
+            <input type="email" name="email" id="email" maxlength="38" required placeholder="E-mail">
+            <input type="text" name="fone" id="fone" maxlength="17" required placeholder="Telefone">
+            <input type="button" class="botao" value="Enviar">
         </form>
     </div>
 
