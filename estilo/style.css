@@ -123,12 +123,11 @@ label , #qtd, #dest, .botao {
     margin-bottom: 20px;
 }
 label, .botao {
-    background-color: rgb(177, 175, 175);
+    background-color: rgb(170, 67, 67);
     color: rgb(0, 0, 0);
 }
 
 #quadro_animado {
-    
     margin: auto;
     background-size: cover;
     animation-duration: 15s;
