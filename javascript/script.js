@@ -1,21 +1,27 @@
-function confirmar() {
-    
-    var qtd = document.getElementById('qtd')
-    var horas = Number(qtd.value)
-    var msg = document.getElementById('msg')
-    //var opts = document.querySelectorAll("select option");
-    var opts = document.getElementById('opcoes') 
-    var opcoes = Number(opts.value)
-    
-    //if (opcoes == 1) //cadillac 
-    //{
-        var taxa = 120
-        if (horas == 0){
-            alert('Digite um valor Valido!!')
-        }
-        else {
-            msg.innerHTML = `<p> O valor do aluguel será de R$${horas*taxa},00. Valido por ${horas} Horas. </p> `
-        }
-   // }
+var nome = document.getElementsByClassName('nome'.toUpperCase)
+var qtd = document.getElementsByClassName('qtd')
+var quantidade = Number(qtd.value)
+var msg = document.getElementById('msg')
 
+function calcular() {
+
+    if (nome = 'BMW') {
+        var taxa = 200
+        msg.innerHTML = `O valor para o aluguel da BMW durante ${quantidade} Horas será de  R$${taxa * quantidade},00.`
+    }
+    else if (nome = 'AUDI') {
+        var taxa = 250
+        msg.innerHTML = `O valor para o aluguel do Audi G3 durante ${quantidade} Horas será de  R$${taxa * quantidade},00.`
+    }
+    else if (nome = 'MERCEDES') {
+        var taxa = 280
+        msg.innerHTML = `O valor para o aluguel da Mercedes durante ${quantidade} Horas será de  R$${taxa * quantidade},00.`
+    }
+    else if (nome = 'HYUNDAI') {
+        var taxa = 170
+        msg.innerHTML = `O valor para o aluguel da Hyundai durante ${quantidade} Horas será de  R$${taxa * quantidade},00.`
+    }
+    else {
+        alert('Valores inconcistentes')
+    }
 }

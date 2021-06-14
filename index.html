@@ -42,69 +42,67 @@
     </div>
 
     <div class="fundo2" id="catalogo">
-        <div class="destaque">#alugueclassicos</div>
+        <div class="destaque">Carros Esportivos</div>
     </div>
 
-    <div class="conteudo" id="cat">
+    <div class="conteudo" >
         <h1>Catalogo</h1>
         <main class="fotos">
             <div class="container">
                 <!-- catalogo de carros -->
-                <img src="imagens/foto01.jpg" alt="Cadillac" title="Cadillac">
-                <img src="imagens/foto02.jpg" alt="Kombi" title="Kombi">
-                <img src="imagens/foto03.jpg" alt="Mustang" title="Mustang">
-                <img src="imagens/foto04.jpg" alt="Fusca" title="Fusca">
-                <img src="imagens/foto05.jpg" alt="Cadillac" title="Cadillac">
-                <img src="imagens/foto06.jpg" alt="Kombi" title="Kombi">
-
-
+                <img src="imagens/foto01.jpg" alt="" title="">
+                <img src="imagens/foto02.jpg" alt="" title="">
+                <img src="imagens/foto03.jpg" alt="" title="">
+                <img src="imagens/foto04.jpg" alt="" title="">
+                <img src="imagens/foto08.jpg" alt="" title="">
+                <img src="imagens/foto06.jpg" alt="" title="">
             </div>
         </main>
 
     </div>
 
-    <div class="fundo2" id="galeria">
+    <div class="fundo3">
         <div class="destaque">Midias</div>
     </div>
 
-    <div class="conteudo" id="gal">
+    <div class="conteudo" id="galeria">
         <h1>Galeria</h1>
         <main class="fotos">
             <div class="container" id="galeria">
                 <!-- galeria de fotos, videos, audios -->
-                <video src="videos/videochave.mp4" width="380" height="320" controls></video>
-                <video src="videos/videointerior.mp4" width="380" height="320" controls></video>
-                <video src="videos/videoestrada.mp4" width="380" height="320" controls></video>
+                <video src="videos/videochave.mp4" controls></video>
+                <video src="videos/videointerior.mp4" controls></video>
+                <video src="videos/videoestrada.mp4" controls></video>
             </div>
-            <div class="container" id="galeria">
-                <!-- galeria de fotos, videos, audios -->
-
-                <img src="imagens/pexels-jesse-zheng-1213294.jpg" alt="">
-                <audio src="Audios/Musica.mp3" controls></audio>
-                <img src="imagens/pexels-mike-2365572.jpg" alt="">
-                <audio src="Audios/Musica.mp3" controls></audio>
-                <img src="imagens/pexels-mike-2365572.jpg" alt="">
-                <audio src="Audios/Musica.mp3" controls></audio>
-            </div>
+            <h2>Podcast MotorShow: Uma breve história dos carros esportivos nacionais </h2>
+            <audio src="videos/podcast.mp3" controls> </audio>
         </main>
     </div>
 
-    <div class="fundo3" id="simulacao">
+    <div class="fundo4" id="simulacao">
         <div class="destaque">Faça uma Simulação</div>
     </div>
 
     <div class="conteudo">
+        <h1>Simulação</h1>
+        <!-- <form method="get">
+            Nome do Carro: BMW <input type="" id="nome"> 
+            Quantidade de Dias <input type="number" id="qtd">
+            <button class="botao" onclick="calcular()">CALCULAR</button>
+            <h2 id="msg">MENSAGEM</h2>
+        </form>
+        -->
+        <form method="get">
+            <label for="carro">Nome do Carro</label> 
+            <input type="text" id="entrada" class="carro" maxlength="20" required/>
+            <label for="quantidade">Quantidade de Dias</label>
+            <input type="number" name="qtd" id="entrada" class="qtd" min="1" max="60" required/>
+            <input type="submit" value="Buscar" class="botao" onclick="calcular()">
+        </form>
+        <h2 id="msg">RESPOSTA</h2>
+
+        <hr> <!--Linha-->
         <div class="fotos">
-            <h1>Simulação</h1>
-            <form method="get">
-                <label for="qtd">Nome do Carro</label>
-                <input type="text" name="qtd" id="nome" placeholder="Ex: BMW" />
-                <label for="qtd">Quantidade de Horas</label>
-                <input type="number" name="qtd" id="qtd" />
-                <button type="button" class="botao" onclick="confirmar()">Calcular</button>
-                <input type="reset" value="Limpar" class="botao">
-                <div id="msg"></div>
-            </form>
             <h1>Alguns parceiros</h1>
             <div class="container" id="logo">
                 <img src="imagens/bmw.png" alt="BMW">
@@ -115,7 +113,7 @@
         </div>
     </div>
 
-    <div class="fundo4">
+    <div class="fundo5" id="faleconosco">
         <div class="destaque">Fale conosco</div>
     </div>
 
@@ -123,13 +121,16 @@
         <h1>Seja Nosso parceiro</h1>
         <h2>Você tem um carro e deseja disponibiliza-lo? Cadastre-se e entraremos em contato com você!</h2>
         <h3>Formulario de parceria - Tire suas Duvidas</h3>
+        
         <form method="get">
-
-            <input type="text" name="nome" id="nome" maxlength="50" required placeholder="Ex: Nome">
+            <input type="text" name="nome" id="nomecompleto" maxlength="50" required placeholder="Ex: Nome">
             <input type="email" name="email" id="email" maxlength="38" required placeholder="Ex: E-mail">
             <input type="text" name="fone" id="fone" maxlength="12" required placeholder="Ex: Telefone">
-            <input type="button" class="botao" value="Enviar">
+            <button class="botao" value="Enviar">Enviar</button>
         </form>
+        
+
+        <a href="#top"><img src="imagens/topo.png" class="topo" alt="topo" title="Voltar ao Topo"></a>
     </div>
 
     <footer> Desenvolvido por Elias Castro | 2021 </footer>

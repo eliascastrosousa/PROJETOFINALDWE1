@@ -11,7 +11,7 @@ nav {
     top: 0; 
     width: 100%; /* largura da barra de navegação */
     position:fixed; /* bloco de navegação fixado*/
-    background-color: rgba(255, 230, 5, 0.884);
+    background-color: rgba(0,0,0);
     z-index: 1; /* */
 }
 ul {
@@ -21,7 +21,7 @@ ul {
 }
 a {
     text-decoration: none; /* limpando os links */
-    color: rgba(0, 0, 0, 0.795);
+    color: rgb(255, 255, 255);
     font-size: 1rem; /* tamanho da fonte */
     line-height: 1.5rem; 
 }
@@ -34,8 +34,11 @@ a {
 .fundo4 {
     background-image: url("../imagens/bg04.jpg"); 
 }
+.fundo5 {
+    background-image: url("../imagens/bg05.jpg"); 
+}
 
-.fundo1, .fundo2, .fundo3, .fundo4 {
+.fundo1, .fundo2, .fundo3, .fundo4, .fundo5 {
     position: relative; 
     height: 100%;
     background-size: cover; /* tamanho do fundo, esticando a imagem e prenchendo todo o espaço com ela */
@@ -47,8 +50,8 @@ a {
     left: 0;
     right: 0;
     top: 50%;
-    color: rgba(0, 0, 0, 0.795) ;
-    background-color: rgba(255, 230, 5, 0.884); /* fundo destaque com a frase central*/
+    color: rgb(0, 0, 0) ;
+    background-color: rgb(255, 230, 5); /* fundo destaque com a frase central*/
     padding: 10px;
     width: 40%;
     font-size: 1rem;
@@ -96,26 +99,7 @@ img {
 #logo {
     width: 33%;   
 }
-form {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin: 30px auto;
-}
-label , #qtd, #nome, #email, #fone, .botao {
-    font-size: 1.25rem;
-    padding: 5px;
-    border-radius: 4px;
-    width: 100%;
-}
-#qtd , #nome, #email, #fone , .botao {
-    font-family: inherit;
-    text-align: center;
-    border: none;
-    margin-bottom: 20px;
-    background-color: rgb(179, 178, 178);
-}
+
 #quadro_animado {
     margin: auto;
     background-size: cover;
@@ -123,13 +107,67 @@ label , #qtd, #nome, #email, #fone, .botao {
     animation-iteration-count: infinite;
     animation-name: muda_imagem;
 }
-@keyframes muda_imagem { /* animação de transição*/
-    0%  { background-image: url("../imagens/bg01.jpg") ;} 
-    33% { background-image: url("../imagens/bg02.jpg") ;} 
-    66% { background-image: url("../imagens/bg03.jpg") ;} 
-    100% { background-image: url("../imagens/bg01.jpg") ;} 
+
+form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 30px auto;
+}
+label , .carro, .qtd , .botao {
+    font-size: 1.25rem;
+    padding: 5px;
+    border-radius: 4px;
+    width: 100%;
+}  
+#entrada , .botao {
+    font-family: inherit;
+    text-align: center;
+    border: none;
+    margin-bottom: 20px;
+}
+label, .botao {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
 }
 
+#nome, #email, #fone, #nomecompleto {
+    font-family: inherit;
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 12px 12px 40px;
+    margin-bottom: 20px;    
+}
+#nomecompleto {
+    background-image: url("../imagens/user_peq.png");
+}
+#email {
+    background-image: url("../imagens/correio_peq.png");
+}
+#fone {
+    background-image: url("../imagens/phone_peq.png");
+}
+form p {
+    font-weight: normal;
+}
+
+@keyframes muda_imagem { /* animação de transição*/
+    0%  { background-image: url("../imagens/bg01.jpg") ;} 
+    50% { background-image: url("../imagens/bg02.jpg") ;} 
+    100% { background-image: url("../imagens/bg01.jpg") ;} 
+}
+.topo {
+    height: 15%;
+    width: 8%;
+    position:absolute;
+	left:90%;
+    filter:grayscale() ;
+}
 footer {
     color: rgb(0, 0, 0);
     background-color: rgba(255, 230, 5, 0.884);
@@ -148,8 +186,10 @@ footer {
     }
     ul :hover {
         transform:  rotate(-5deg);
+        color: yellow;
+        
     }
-    a { /* tamanho da letra da barra de navegação */
+        a { /* tamanho da letra da barra de navegação */
         font-size: 1.25rem;
     }
     .fotos .container video {
@@ -183,6 +223,24 @@ footer {
     .quadro_animado {
         width: 620px;
         height: 400px;
+    }
+    form {
+        width: 50%;
+        margin-bottom: 160px;
+    }
+    label {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    #entrada, .botao {
+        width: 50%;
+    }
+    #email, #fone, #nomecompleto {
+        font-size: 1.25rem;
+        padding: 12px 20px 12px 50px ;
+    }
+    label, .botao:hover {
+        color: yellow;
     }
     
     
