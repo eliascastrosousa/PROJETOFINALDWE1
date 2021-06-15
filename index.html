@@ -7,31 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aluguel de Mercedes | Elias Castro</title>
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
-    <link rel="icon" href="../imagens/logohead.png" />
+    <link rel="icon" href="../imagens/Mercedes.png" />
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
     <header>
+        <!-- Cabeçalho -->
         <nav>
             <ul class="botoes">
                 <li> <a href="#top"> Home </a> </li>
                 <li> <a href="#catalogo"> Catalogo </a> </li>
-                <li> <a href="#galeria"> Galeria </a> </li>
+                <li> <a href="#midias"> Midias </a> </li>
                 <li> <a href="#faleconosco">Fale conosco </a> </li>
             </ul>
         </nav>
     </header>
 
     <div class="fundo1" id="quadro_animado">
-        <div class="destaque"> A aluguel de Veiculos </div>
+        <div class="destaque"> Alugue uma Mercedes </div>
     </div>
 
     <div id="fun" class="conteudo texto">
-        <h1>O Aluguel</h1>
-        Somos uma pequena locadora com o objetivo de deixar você mais perto do seu sonho de pilotar uma maquina Mercedes!
-        
+        <h1>Sobre</h1>
+        Somos uma pequena locadora com o objetivo de deixar você mais perto do seu sonho de pilotar uma maquina
+        Mercedes!
     </div>
 
     <div class="fundo2" id="catalogo">
@@ -39,7 +40,7 @@
     </div>
 
     <div class="conteudo">
-        <h1>Catalogo</h1>
+        <h1>Nosso catalogo</h1>
         <main class="fotos">
             <div class="container">
                 <!-- catalogo de carros -->
@@ -51,28 +52,36 @@
                 <img src="imagens/foto06.jpg" alt="" title="">
             </div>
             <hr>
+
             <h1>Simulação</h1>
             <form method="get">
-                <label for="carro">Nome do Carro</label>
-                <select name="carro" id="entrada" class="carro">
-                    <option value="">SELECIONE UM CARRO</option>
-                    <option value="Mercedes1">X6</option>
-                    <option value="Mercedes2">X23</option>
-                    <option value="Mercedes3">C4</option>
-                    <option value="Mercedes4">M6</option>
-                    <option value="Mercedes5">QK9</option>
-                </select>
-                <label for="quantidade">Quantidade de Dias</label>
-                <input type="number" name="qtd" id="entrada" class="qtd" required />
-                <input type="submit" value="Buscar" class="botao" onclick="calcular()">
-            </form>
-            <hr>
-            <h2 id="msg">RESPOSTA</h2>
-        </main>
+                
+                    
+                    <label for="carro">Nome do Carro</label>
+                    <select name="carro" id="carro" class="carro">
+                        <option value="">SELECIONE UM CARRO</option>
+                        <option value="Mercedes1">X6</option>
+                        <option value="Mercedes2">X23</option>
+                        <option value="Mercedes3">C4</option>
+                        <option value="Mercedes4">M6</option>
+                        <option value="Mercedes5">QK9</option>
+                    </select>
+                    <br>
+                    <label for="qtd">Quantidade de Dias</label>
+                    <input type="number" name="qtd" id="qtd" class="qtd">
 
+                    <input type="submit" value="Calcular" class="botao" onclick="calcular()">
+                
+            </form>
+            <fieldset>
+                <legend>RESULTADO</legend>
+                <h2 id="msg"></h2>
+            </fieldset>
+            
+        </main>
     </div>
 
-    <div class="fundo3">
+    <div class="fundo3" id="midias">
         <div class="destaque">Midias</div>
     </div>
 
@@ -94,7 +103,7 @@
 
 
 
-    <div class="fundo5" id="faleconosco">
+    <div class="fundo4" id="faleconosco">
         <div class="destaque">Fale conosco</div>
     </div>
 

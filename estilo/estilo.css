@@ -25,6 +25,18 @@ a {
     font-size: 1rem; /* tamanho da fonte */
     line-height: 1.5rem; 
 }
+#quadro_animado {
+    margin: auto;
+    background-size: cover;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-name: muda_imagem;
+}
+@keyframes muda_imagem { /* animação de transição*/
+    0%  { background-image: url("../imagens/bg01.jpg") ;} 
+    50% { background-image: url("../imagens/bg02.jpg") ;} 
+    100% { background-image: url("../imagens/bg01.jpg") ;} 
+}
 .fundo2 {
     background-image: url("../imagens/bg02.jpg"); 
 }
@@ -32,20 +44,17 @@ a {
     background-image: url("../imagens/bg03.jpg"); 
 }
 .fundo4 {
-    background-image: url("../imagens/bg04.jpg"); 
-}
-.fundo5 {
     background-image: url("../imagens/bg05.jpg"); 
 }
 
-.fundo1, .fundo2, .fundo3, .fundo4, .fundo5 {
+.fundo1, .fundo2, .fundo3, .fundo4{
     position: relative; 
     height: 100%;
     background-size: cover; /* tamanho do fundo, esticando a imagem e prenchendo todo o espaço com ela */
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; /* a fundo nao se mexe, faz o efeito de só a pagina rolar*/
 }
-.destaque {
+.destaque { /* parte do conteudo escrito */
     position: absolute;
     left: 0;
     right: 0;
@@ -55,7 +64,7 @@ a {
     padding: 10px;
     width: 40%;
     font-size: 1rem;
-    filter: drop-shadow(4px 4px gainsboro);
+    filter: drop-shadow(4px 4px gainsboro); 
     margin: auto;
 }
 .conteudo {
@@ -75,38 +84,29 @@ a {
     box-sizing: border-box;
 }
 .fotos , .container {
-    background: none;
-}
-.fotos  .container img, video {
-    border-radius: 5%;
-    padding: 10px;
-    margin-bottom: 20px;
-    width: 80%;
-}
-.texto { /**/
-    text-align: justify;
+    background: none; 
 }
 
+.fotos .container img { 
+    width: 40%;
+    padding: 10px;
+    filter: none; 
+    
+}
+.fotos .container video {
+    width: 80%;
+    padding: 10px;
+    filter: none;
+}
+
+.texto { 
+    text-align: justify;
+}
 h1 { /**/
     text-transform: uppercase;
     color: rgb(0, 0, 0);
     text-align: center;
 }
-img {
-    width: 100%;
-}
-#logo {
-    width: 33%;   
-}
-
-#quadro_animado {
-    margin: auto;
-    background-size: cover;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    animation-name: muda_imagem;
-}
-
 form {
     display: flex;
     justify-content: space-around;
@@ -120,18 +120,18 @@ label , .carro, .qtd , .botao {
     border-radius: 4px;
     width: 100%;
 }  
-#entrada , .botao {
+label , .carro , .qtd ,.botao {
     font-family: inherit;
     text-align: center;
     border: none;
     margin-bottom: 20px;
 }
-label, .botao {
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
+label, .carro ,.qtd ,.botao {
+    background-color: rgb(139, 139, 139);
+    color: rgb(0, 0, 0);
 }
 
-#nome, #email, #fone, #nomecompleto {
+#email, #fone, #nomecompleto {
     font-family: inherit;
     font-size: 1rem;
     width: 100%;
@@ -143,28 +143,19 @@ label, .botao {
     margin-bottom: 20px;    
 }
 #nomecompleto {
-    background-image: url("../imagens/user_peq.png");
+    background-image: url("../imagens/pessoa.png");
 }
 #email {
-    background-image: url("../imagens/correio_peq.png");
+    background-image: url("../imagens/email.png");
 }
 #fone {
-    background-image: url("../imagens/phone_peq.png");
-}
-form p {
-    font-weight: normal;
-}
-
-@keyframes muda_imagem { /* animação de transição*/
-    0%  { background-image: url("../imagens/bg01.jpg") ;} 
-    50% { background-image: url("../imagens/bg02.jpg") ;} 
-    100% { background-image: url("../imagens/bg01.jpg") ;} 
+    background-image: url("../imagens/phone.png");
 }
 .topo {
-    height: 15%;
-    width: 8%;
+    height: 10%;
+    width: 13%;
     position:absolute;
-	left:90%;
+	left:80%;
     filter:grayscale() ;
 }
 footer {
@@ -186,23 +177,17 @@ footer {
     ul :hover {
         transform:  rotate(-5deg);
         color: yellow;
-        
     }
-        a { /* tamanho da letra da barra de navegação */
+    a { /* tamanho da letra da barra de navegação */
         font-size: 1.25rem;
     }
-    .fotos .container video {
+    .fotos .container img, .fotos .container video { 
         width: 30%;
         filter: none; 
-        border-radius: 5%; 
+        border-radius: 8%; 
     }
-    #logo {
-        width: 33%;   
-    }
-    .fotos .container img {
-        width: 30%;
-        filter: none; 
-        border-radius: 5%; 
+    .fotos .container img:hover {
+        filter: grayscale();
     }
     .fotos .container {
         flex-wrap: wrap;
@@ -228,30 +213,27 @@ footer {
         margin-bottom: 160px;
     }
     label {
-        width: 40%;
+        width: 45%;
         margin-bottom: 20px;
     }
-    #entrada, .botao {
+    .carro, .qtd, .botao {
         width: 50%;
     }
     #email, #fone, #nomecompleto {
         font-size: 1.25rem;
         padding: 12px 20px 12px 50px ;
     }
-    label, .botao:hover {
+    .botao:hover {
         color: yellow;
     }
-    #parceiros {
-        height: 10%;
-        width: 10%;
-        padding: 5px;
+    .topo {
+        height: 15%;
+        width: 8%;
+        position:absolute;
+        left:90%;
+        filter:grayscale() ;
     }
-    #logo {
-        width: 35px;
-        height:35px;
-    }
-    div .container:hover {
-        
-    }
+    
+    
     
 }
