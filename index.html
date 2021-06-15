@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aluguel de Veiculos | Elias Castro</title>
+    <title>Aluguel de Mercedes | Elias Castro</title>
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="icon" href="../imagens/logohead.png" />
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
@@ -13,15 +13,16 @@
 </head>
 
 <body>
-    <nav>
-        <ul class="botoes">
-            <li> <a href="#top"> Home </a> </li>
-            <li> <a href="#catalogo"> Catalogo </a> </li>
-            <li> <a href="#galeria"> Galeria </a> </li>
-            <li> <a href="#simulacao"> Simulação </a> </li>
-            <li> <a href="#faleconosco">Fale conosco </a> </li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul class="botoes">
+                <li> <a href="#top"> Home </a> </li>
+                <li> <a href="#catalogo"> Catalogo </a> </li>
+                <li> <a href="#galeria"> Galeria </a> </li>
+                <li> <a href="#faleconosco">Fale conosco </a> </li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="fundo1" id="quadro_animado">
         <div class="destaque"> A aluguel de Veiculos </div>
@@ -29,23 +30,15 @@
 
     <div id="fun" class="conteudo texto">
         <h1>O Aluguel</h1>
-        Somos uma pequena locadora com o objetivo de deixar você mais perto do seu sonho de pilotar uma maquina!
-        Trabalhamos
-        aproximando você do nosso parceiro colecionador, para experimentar aquela sensação que marcou época!
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus nostrum, totam nesciunt libero unde
-        inventore! Inventore animi earum nihil delectus explicabo iusto consequuntur nemo quisquam reprehenderit
-        mollitia, id, accusantium necessitatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ad, sint
-        ipsa beatae eius excepturi nulla dolorum hic laboriosam quae deserunt ab cupiditate quo aliquam, voluptates
-        molestiae optio? In, dolorum! Lorem ipsum dolor sit amet consectetur adipisicing elit. In omnis voluptatem
-        perferendis. Itaque numquam quia reprehenderit molestiae placeat quod, optio obcaecati dolorem dolores libero
-        eius ad dolorum quibusdam quaerat dignissimos?
+        Somos uma pequena locadora com o objetivo de deixar você mais perto do seu sonho de pilotar uma maquina Mercedes!
+        
     </div>
 
     <div class="fundo2" id="catalogo">
         <div class="destaque">Carros Esportivos</div>
     </div>
 
-    <div class="conteudo" >
+    <div class="conteudo">
         <h1>Catalogo</h1>
         <main class="fotos">
             <div class="container">
@@ -57,6 +50,24 @@
                 <img src="imagens/foto08.jpg" alt="" title="">
                 <img src="imagens/foto06.jpg" alt="" title="">
             </div>
+            <hr>
+            <h1>Simulação</h1>
+            <form method="get">
+                <label for="carro">Nome do Carro</label>
+                <select name="carro" id="entrada" class="carro">
+                    <option value="">SELECIONE UM CARRO</option>
+                    <option value="Mercedes1">X6</option>
+                    <option value="Mercedes2">X23</option>
+                    <option value="Mercedes3">C4</option>
+                    <option value="Mercedes4">M6</option>
+                    <option value="Mercedes5">QK9</option>
+                </select>
+                <label for="quantidade">Quantidade de Dias</label>
+                <input type="number" name="qtd" id="entrada" class="qtd" required />
+                <input type="submit" value="Buscar" class="botao" onclick="calcular()">
+            </form>
+            <hr>
+            <h2 id="msg">RESPOSTA</h2>
         </main>
 
     </div>
@@ -66,7 +77,7 @@
     </div>
 
     <div class="conteudo" id="galeria">
-        <h1>Galeria</h1>
+        <h1>Galeria de videos </h1>
         <main class="fotos">
             <div class="container" id="galeria">
                 <!-- galeria de fotos, videos, audios -->
@@ -74,44 +85,14 @@
                 <video src="videos/videointerior.mp4" controls></video>
                 <video src="videos/videoestrada.mp4" controls></video>
             </div>
-            <h2>Podcast MotorShow: Uma breve história dos carros esportivos nacionais </h2>
+            <hr>
+            <h1>Podcast </h1>
+            <h2>MotorShow: Uma breve história dos carros esportivos nacionais </h2>
             <audio src="videos/podcast.mp3" controls> </audio>
         </main>
     </div>
 
-    <div class="fundo4" id="simulacao">
-        <div class="destaque">Faça uma Simulação</div>
-    </div>
 
-    <div class="conteudo">
-        <h1>Simulação</h1>
-        <!-- <form method="get">
-            Nome do Carro: BMW <input type="" id="nome"> 
-            Quantidade de Dias <input type="number" id="qtd">
-            <button class="botao" onclick="calcular()">CALCULAR</button>
-            <h2 id="msg">MENSAGEM</h2>
-        </form>
-        -->
-        <form method="get">
-            <label for="carro">Nome do Carro</label> 
-            <input type="text" id="entrada" class="carro" maxlength="20" required/>
-            <label for="quantidade">Quantidade de Dias</label>
-            <input type="number" name="qtd" id="entrada" class="qtd" min="1" max="60" required/>
-            <input type="submit" value="Buscar" class="botao" onclick="calcular()">
-        </form>
-        <h2 id="msg">RESPOSTA</h2>
-
-        <hr> <!--Linha-->
-        <div class="fotos">
-            <h1>Alguns parceiros</h1>
-            <div class="container" id="logo">
-                <img src="imagens/bmw.png" alt="BMW">
-                <img src="imagens/Audi-logo.png" alt="Audi">
-                <img src="imagens/mercedes.png" alt="Mercedes">
-                <img src="imagens/hyundai.png" alt="hyundai">
-            </div>
-        </div>
-    </div>
 
     <div class="fundo5" id="faleconosco">
         <div class="destaque">Fale conosco</div>
@@ -121,14 +102,14 @@
         <h1>Seja Nosso parceiro</h1>
         <h2>Você tem um carro e deseja disponibiliza-lo? Cadastre-se e entraremos em contato com você!</h2>
         <h3>Formulario de parceria - Tire suas Duvidas</h3>
-        
+
         <form method="get">
             <input type="text" name="nome" id="nomecompleto" maxlength="50" required placeholder="Ex: Nome">
             <input type="email" name="email" id="email" maxlength="38" required placeholder="Ex: E-mail">
             <input type="text" name="fone" id="fone" maxlength="12" required placeholder="Ex: Telefone">
             <button class="botao" value="Enviar">Enviar</button>
         </form>
-        
+
 
         <a href="#top"><img src="imagens/topo.png" class="topo" alt="topo" title="Voltar ao Topo"></a>
     </div>
