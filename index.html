@@ -26,57 +26,42 @@
     </header>
 
     <div class="fundo1" id="quadro_animado">
-        <div class="destaque"> Alugue uma Mercedes </div>
+        <div class="destaque"> Alugue um Esportivo </div>
     </div>
 
-    <div id="fun" class="conteudo texto">
-        <h1>Sobre</h1>
-        Somos uma pequena locadora com o objetivo de deixar você mais perto do seu sonho de pilotar uma maquina
-        Mercedes!
-    </div>
-
-    <div class="fundo2" id="catalogo">
-        <div class="destaque">Carros Esportivos</div>
-    </div>
-
-    <div class="conteudo">
+    <div class="conteudo" id="catalogo">
         <h1>Nosso catalogo</h1>
         <main class="fotos">
             <div class="container">
                 <!-- catalogo de carros -->
-                <img src="imagens/foto01.jpg" alt="" title="">
-                <img src="imagens/foto02.jpg" alt="" title="">
-                <img src="imagens/foto03.jpg" alt="" title="">
-                <img src="imagens/foto04.jpg" alt="" title="">
-                <img src="imagens/foto08.jpg" alt="" title="">
-                <img src="imagens/foto06.jpg" alt="" title="">
+                <img src="imagens/corsa_hatch.jpg" alt="" title="">
+                <img src="imagens/ford_ka.jpg" alt="" title="">
+                <img src="imagens/novo_gol.jpg" alt="" title="">
+                <img src="imagens/novo_uno.jpg" alt="" title="">
+                <img src="imagens/onix.jpg" alt="" title="">
+                <img src="imagens/kwid.jpg" alt="" title="">
             </div>
             <hr>
 
             <h1>Simulação</h1>
-            <form method="get">
-                
-                    
-                    <label for="carro">Nome do Carro</label>
-                    <select name="carro" id="carro" class="carro">
-                        <option value="">SELECIONE UM CARRO</option>
-                        <option value="Mercedes1">X6</option>
-                        <option value="Mercedes2">X23</option>
-                        <option value="Mercedes3">C4</option>
-                        <option value="Mercedes4">M6</option>
-                        <option value="Mercedes5">QK9</option>
+            <div class="container">
+                <div>
+                    <h3>Escolha o Carro:</h3> 
+                    <select name="" id="sel_rede_social" class="carro">
+                        <option value="" selected disabled >Escolha um Carro:     </option>
+                        <option value="corsa_hatch">Chevrolet Corsa Hatch</option>
+                        <option value="ford_ka">Ford Fiesta</option>
+                        <option value="novo_gol">Volks Wagen Gol </option>
+                        <option value="novo_uno">Fiat Novo Uno</option>
+                        <option value="onix">Chevrolet Onix</option>
+                        <option value="kwid">Renault Kwid</option>
                     </select>
-                    <br>
-                    <label for="qtd">Quantidade de Dias</label>
-                    <input type="number" name="qtd" id="qtd" class="qtd">
-
-                    <input type="submit" value="Calcular" class="botao" onclick="calcular()">
-                
-            </form>
-            <fieldset>
-                <legend>RESULTADO</legend>
-                <h2 id="msg"></h2>
-            </fieldset>
+                </div>
+                <div>
+                    <img src="imagens/social-media.png" alt="Redes Sociais" id="img_rede_social">
+                    <p id="p_rede_social">Redes Sociais</p>
+                </div>
+                </div>
             
         </main>
     </div>

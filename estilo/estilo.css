@@ -216,8 +216,11 @@ footer {
         width: 45%;
         margin-bottom: 20px;
     }
-    .carro, .qtd, .botao {
+     .qtd, .botao {
         width: 50%;
+    }
+    .carro {
+        width: 120%;
     }
     #email, #fone, #nomecompleto {
         font-size: 1.25rem;
