@@ -44,7 +44,7 @@ a {
     background-image: url("../imagens/bg03.jpg"); 
 }
 .fundo4 {
-    background-image: url("../imagens/bg05.jpg"); 
+    background-image: url("../imagens/bg04.jpg"); 
 }
 
 .fundo1, .fundo2, .fundo3, .fundo4{
@@ -131,7 +131,7 @@ label, .carro ,.qtd ,.botao {
     color: rgb(0, 0, 0);
 }
 
-#email, #fone, #nomecompleto {
+#email, #fone, #nome {
     font-family: inherit;
     font-size: 1rem;
     width: 100%;
@@ -142,14 +142,14 @@ label, .carro ,.qtd ,.botao {
     padding: 12px 12px 12px 40px;
     margin-bottom: 20px;    
 }
-#nomecompleto {
-    background-image: url("../imagens/pessoa.png");
+form #nome {
+    background-image: url("../imagens/user_peq.png");
 }
-#email {
-    background-image: url("../imagens/email.png");
+form #email {
+    background-image: url("../imagens/correio_peq.png");
 }
-#fone {
-    background-image: url("../imagens/phone.png");
+form #fone {
+    background-image: url("../imagens/phone_peq.png");
 }
 .topo {
     height: 10%;
@@ -181,13 +181,23 @@ footer {
     a { /* tamanho da letra da barra de navegação */
         font-size: 1.25rem;
     }
+    .container .simulacao_carros {
+        justify-content: center;
+
+    }
+    #nome {
+        background-image: url("imagens/pessoa.png");
+    }
+    #email {
+        background-image: url("imagens/email.png");
+    }
+    #fone {
+        background-image: url("imagens/phone_peq.png");
+    }
     .fotos .container img, .fotos .container video { 
         width: 30%;
         filter: none; 
         border-radius: 8%; 
-    }
-    .fotos .container img:hover {
-        filter: grayscale();
     }
     .fotos .container {
         flex-wrap: wrap;
@@ -236,7 +246,17 @@ footer {
         left:90%;
         filter:grayscale() ;
     }
+    #img_carros{
+        border-radius: 5%;
+        width: 600px;
+        height: 400px;
+        filter: none;
+        
+
+    }
     
-    
+    .container img:hover {
+        filter: grayscale();
+    }
     
 }

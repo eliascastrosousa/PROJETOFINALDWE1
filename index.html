@@ -32,37 +32,40 @@
     <div class="conteudo" id="catalogo">
         <h1>Nosso catalogo</h1>
         <main class="fotos">
-            <div class="container">
+            <div class="container" id="escala_cor">
                 <!-- catalogo de carros -->
-                <img src="imagens/corsa_hatch.jpg" alt="" title="">
-                <img src="imagens/ford_ka.jpg" alt="" title="">
-                <img src="imagens/novo_gol.jpg" alt="" title="">
-                <img src="imagens/novo_uno.jpg" alt="" title="">
-                <img src="imagens/onix.jpg" alt="" title="">
-                <img src="imagens/kwid.jpg" alt="" title="">
+                <img src="imagens/Hyundai Hb20.jpg" >
+                <img src="imagens/Ford Fiesta.jpg" >
+                <img src="imagens/VolksWagen Gol.jpg" >
+                <img src="imagens/Fiat Novo Uno.jpg" >
+                <img src="imagens/Chevrolet Onix.jpg" >
+                <img src="imagens/Renaul Kwid.jpg" >
             </div>
             <hr>
 
             <h1>Simulação</h1>
             <div class="container">
+                <p>Selecione o modelo: </p> 
                 <div>
-                    <h3>Escolha o Carro:</h3> 
-                    <select name="" id="sel_rede_social" class="carro">
+                    <select name="" id="sel_carro" class="carro"> 
                         <option value="" selected disabled >Escolha um Carro:     </option>
-                        <option value="corsa_hatch">Chevrolet Corsa Hatch</option>
-                        <option value="ford_ka">Ford Fiesta</option>
-                        <option value="novo_gol">Volks Wagen Gol </option>
-                        <option value="novo_uno">Fiat Novo Uno</option>
-                        <option value="onix">Chevrolet Onix</option>
-                        <option value="kwid">Renault Kwid</option>
+                        <option value="Hyundai Hb20" >Hyundai Hb20</option>
+                        <option value="Ford Fiesta" >Ford Fiesta</option>
+                        <option value="VolksWagen Gol" >Volks Wagen Gol </option>
+                        <option value="Fiat Novo Uno">Fiat Novo Uno</option>
+                        <option value="Chevrolet Onix">Chevrolet Onix</option>
+                        <option value="Renaul Kwid">Renault Kwid</option>
                     </select>
                 </div>
-                <div>
-                    <img src="imagens/social-media.png" alt="Redes Sociais" id="img_rede_social">
-                    <p id="p_rede_social">Redes Sociais</p>
-                </div>
-                </div>
-            
+            </div>
+            <div class="container simulacao_carros">
+                <img src="imagens/bg01.jpg" alt="Carros" id="img_carros">
+                
+                <h2 id="h2texto"></h2>
+                <h2 id="h3texto"></h3>
+                <h3 id="p_detalhes"></h3>
+            </div>                  
+                          
         </main>
     </div>
 
@@ -98,7 +101,7 @@
         <h3>Formulario de parceria - Tire suas Duvidas</h3>
 
         <form method="get">
-            <input type="text" name="nome" id="nomecompleto" maxlength="50" required placeholder="Ex: Nome">
+            <input type="text" name="nome" id="nome" maxlength="50" required placeholder="Ex: Nome">
             <input type="email" name="email" id="email" maxlength="38" required placeholder="Ex: E-mail">
             <input type="text" name="fone" id="fone" maxlength="12" required placeholder="Ex: Telefone">
             <button class="botao" value="Enviar">Enviar</button>
