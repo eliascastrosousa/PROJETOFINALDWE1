@@ -12,7 +12,7 @@ function FunMudaFigura() { // criando a função a partir da change
     obj_img_carros.setAttribute('title', 'Logo ' + sel_carro.value)
     if (sel_carro.value == 'Hyundai Hb20'){
         obj_h2texto.innerHTML = `${sel_carro.value} Ano 2015` 
-        obj_h3texto.innerText = 'Aluguel: R$90,00 Diaria' 
+        obj_h3texto.innerText = 'Aluguel: R$120,00 Diaria' 
         obj_p_detalhes.innerText = 'Modelo com travas e vidros eletricos. '
 
     }else if (sel_carro.value == 'Ford Fiesta'){

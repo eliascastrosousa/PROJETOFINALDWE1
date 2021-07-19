@@ -114,19 +114,19 @@ form {
     padding: 20px;
     margin: 30px auto;
 }
-label , .carro, .qtd , .botao {
+label , .carro, .carroform, .qtd , .botao {
     font-size: 1.25rem;
     padding: 5px;
     border-radius: 4px;
     width: 100%;
 }  
-label , .carro , .qtd ,.botao {
+label , .carro, .carroform, .radio , .qtd ,.botao {
     font-family: inherit;
     text-align: center;
     border: none;
     margin-bottom: 20px;
 }
-label, .carro ,.qtd ,.botao {
+label, .carro,.qtd ,.botao {
     background-color: rgb(139, 139, 139);
     color: rgb(0, 0, 0);
 }
@@ -229,7 +229,7 @@ footer {
      .qtd, .botao {
         width: 50%;
     }
-    .carro {
+    .carro, .carroform {
         width: 120%;
     }
     #email, #fone, #nomecompleto {

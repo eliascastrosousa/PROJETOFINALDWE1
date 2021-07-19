@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locadora JR</title>
+    <title>Locadora GuaruCity</title>
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="icon" href="../imagens/Mercedes.png" />
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
@@ -24,12 +24,13 @@
             </ul>
         </nav>
     </header>
-
+    
     <div class="fundo1" id="quadro_animado">
-        <div class="destaque"> Locadora JR </div>
+        <div class="destaque"> Locadora GuaruCity </div>
     </div>
 
     <div class="conteudo" id="catalogo">
+        <P>Elias Castro Sousa Junior RA GU3015378 </P>
         <h1>Nosso catalogo</h1>
         <main class="fotos">
             <div class="container" id="escala_cor">
@@ -96,14 +97,29 @@
     </div>
 
     <div id="fale" class="conteudo">
-        <h1>Seja Nosso parceiro</h1>
-        <h2>Você tem um carro e deseja vende-lo? Cadastre-se e entraremos em contato com você!</h2>
+        <h1>Fale Conosco</h1>
+        <h2>Deseja Alugar? Ou você tem um carro e deseja vende-lo? <br> Cadastre-se e entraremos em contato com você!</h2>
         <h3>Formulario de parceria - Tire suas Duvidas</h3>
 
         <form method="get">
             <input type="text" name="nome" id="nome" maxlength="50" required placeholder="Ex: Nome">
             <input type="email" name="email" id="email" maxlength="38" required placeholder="Ex: E-mail">
             <input type="text" name="fone" id="fone" maxlength="12" required placeholder="Ex: Telefone">
+            <input type="radio" name="horas"> 1 hora
+            <input type="radio" name="horas"> 2 Horas
+            <input type="radio" name="horas"> 3 Horas
+            <input type="radio" name="horas"> +3 Horas
+            <br>
+            <select name="" id="sel_carro" class="carroform"> 
+                <option value="" selected disabled >Selecione o Carro (Apenas na opção de aluguel):     </option>
+                <option value=" Hb20" >Hyundai Hb20</option>
+                <option value=" Fiesta" >Ford Fiesta</option>
+                <option value=" Gol" >Volks Wagen Gol </option>
+                <option value=" Novo Uno">Fiat Novo Uno</option>
+                <option value=" Onix">Chevrolet Onix</option>
+                <option value=" Kwid">Renault Kwid</option>
+            </select>
+             
             <button class="botao" value="Enviar">Enviar</button>
         </form>
 
