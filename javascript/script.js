@@ -14,46 +14,52 @@ function FunMudaFigura() { // criando a função a partir da change
         obj_h2texto.innerHTML = `${sel_carro.value} Ano 2015` 
         obj_h3texto.innerText = 'Aluguel: R$120,00 Diaria' 
         obj_p_detalhes.innerText = 'Modelo com travas e vidros eletricos. '
-        obj_p_detalhes.innerHTML += `Deseja Alugar? <a href="#alugueaqui"> Clique aqui!</a>`
+        obj_p_detalhes.innerHTML += `Deseja Alugar? Informe seu contato <a href="#nome"> a seguir.</a>`
 
     }else if (sel_carro.value == 'Ford Fiesta'){
         obj_h2texto.innerHTML = `${sel_carro.value} Ano 2019` 
         obj_h3texto.innerText = 'Aluguel: R$140,00 Diaria' 
         obj_p_detalhes.innerText = 'Modelo completo com Ar condicionado, travas e vidros eletricos. '
-        obj_p_detalhes.innerHTML += `Deseja Alugar? <a href="#alugueaqui"> Clique aqui!</a>`
+        obj_p_detalhes.innerHTML += `Deseja Alugar? Informe seu contato <a href="#nome"> a seguir.</a>`
 
     }else if (sel_carro.value == 'VolksWagen Gol'){
         obj_h2texto.innerHTML = `${sel_carro.value} Ano 2020` 
         obj_h3texto.innerText = 'Aluguel: R$130,00 Diaria' 
         obj_p_detalhes.innerText = 'Modelo completo com Ar condicionado, travas e vidros eletricos. '
-        obj_p_detalhes.innerHTML += `Deseja Alugar? <a href="#alugueaqui"> Clique aqui!</a>`
+        obj_p_detalhes.innerHTML += `Deseja Alugar? Informe seu contato <a href="#nome"> a seguir.</a>`
 
     }else if (sel_carro.value == 'Fiat Novo Uno'){
         obj_h2texto.innerHTML = `${sel_carro.value} Ano 2018 <br>` 
         obj_h3texto.innerText = 'Aluguel: R$100,00 Diaria' 
         obj_p_detalhes.innerText = 'Modelo completo travas e vidros eletricos. '
-        obj_p_detalhes.innerHTML += `Deseja Alugar? <a href="#alugueaqui"> Clique aqui!</a>`
+        obj_p_detalhes.innerHTML += `Deseja Alugar? Informe seu contato <a href="#nome"> a seguir.</a>`
 
     }else if (sel_carro.value == 'Chevrolet Onix'){
         obj_h2texto.innerHTML = `${sel_carro.value} Ano 2020` 
         obj_h3texto.innerText = 'Aluguel: R$130,00 Diaria' 
         obj_p_detalhes.innerText = 'Modelo completo com Ar condicionado, travas e vidros eletricos. '
-        obj_p_detalhes.innerHTML += `Deseja Alugar? <a href="#alugueaqui"> Clique aqui!</a>`
+        obj_p_detalhes.innerHTML += `Deseja Alugar? Informe seu contato <a href="#nome"> a seguir.</a>`
 
     }else if (sel_carro.value == 'Renaul Kwid'){
         obj_h2texto.innerHTML = `${sel_carro.value} Ano 2021` 
         obj_h3texto.innerText = 'Aluguel: R$120,00 Diaria' 
         obj_p_detalhes.innerText = 'Modelo completo com Ar condicionado, travas e vidros eletricos. '
-        obj_p_detalhes.innerHTML += `Deseja Alugar? <a href="#alugueaqui"> Clique aqui!</a>`
+        obj_p_detalhes.innerHTML += `Deseja Alugar? Informe seu contato <a href="#nome"> a seguir.</a>`
     }
 }
 
 const obj_enviar_form = document.querySelector('#enviar_form')
 const obj_resposta = document.querySelector('#resposta')
+const obj_nome = document.querySelector('#nome')
+const obj_fone = document.querySelector('#fone')
+const obj_email = document.querySelector('#email')
 
 obj_enviar_form.addEventListener('click', FunEnviarDados)
 
 function FunEnviarDados(){
-    obj_resposta.innerHTML = 'Dados Enviados com Sucesso! Aguarde que Entraremos em contato com você.'
-
+   if(obj_nome.value == '' || obj_fone.value =='' || obj_nome.fone == '' ){
+       alert("Insira os dados corretamente!")
+   }else{
+    obj_resposta.innerText = 'Aguarde que Entraremos em contato com você.'
+   }
 }
