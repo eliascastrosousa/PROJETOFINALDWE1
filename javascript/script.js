@@ -14,6 +14,9 @@ function FunMudaFigura() { // criando a função a partir da change
         obj_h2texto.innerHTML = `${sel_carro.value} Ano 2015` 
         obj_h3texto.innerText = 'Aluguel: R$120,00 Diaria' 
         obj_p_detalhes.innerText = 'Modelo com travas e vidros eletricos. '
+        obj_p_detalhes.innerHTML += `Deseja Alugar? <a href="#alugueaqui"> Clique aqui!</a>`
+
+        
 
     }else if (sel_carro.value == 'Ford Fiesta'){
         obj_h2texto.innerHTML = `${sel_carro.value} Ano 2019` 

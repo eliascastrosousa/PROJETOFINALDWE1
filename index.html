@@ -85,6 +85,7 @@
             </div>
             <hr>
             <h1>Podcast </h1>
+            
             <h2>MotorShow: Uma breve história dos carros esportivos nacionais </h2>
             <audio src="videos/podcast.mp3" controls> </audio>
         </main>
@@ -98,18 +99,13 @@
 
     <div id="fale" class="conteudo">
         <h1>Fale Conosco</h1>
-        <h2>Deseja Alugar? Ou você tem um carro e deseja vende-lo? <br> Cadastre-se e entraremos em contato com você!</h2>
-        <h3>Formulario de parceria - Tire suas Duvidas</h3>
+        <h2 id="alugueaqui">Deseja Alugar? Ou você tem um carro e deseja vende-lo? <br> Cadastre-se e entraremos em contato com você!</h2>
+        <h3 >Formulario de parceria - Tire suas Duvidas</h3>
 
         <form method="get">
             <input type="text" name="nome" id="nome" maxlength="50" required placeholder="Ex: Nome">
             <input type="email" name="email" id="email" maxlength="38" required placeholder="Ex: E-mail">
             <input type="text" name="fone" id="fone" maxlength="12" required placeholder="Ex: Telefone">
-            <input type="radio" name="horas"> 1 hora
-            <input type="radio" name="horas"> 2 Horas
-            <input type="radio" name="horas"> 3 Horas
-            <input type="radio" name="horas"> +3 Horas
-            <br>
             <select name="" id="sel_carro" class="carroform"> 
                 <option value="" selected disabled >Selecione o Carro (Apenas na opção de aluguel):     </option>
                 <option value=" Hb20" >Hyundai Hb20</option>
@@ -119,10 +115,13 @@
                 <option value=" Onix">Chevrolet Onix</option>
                 <option value=" Kwid">Renault Kwid</option>
             </select>
-             
-            <button class="botao" value="Enviar">Enviar</button>
+            <input type="radio" name="horas"> 1 hora
+            <input type="radio" name="horas"> 2 Horas
+            <input type="radio" name="horas"> 3 Horas
+            <input type="radio" name="horas"> 4 Horas ou Mais
+            <button class="botao" value="Enviar" >Enviar</button>
         </form>
-
+        <div id="resposta"></div>
 
         <a href="#top"><img src="imagens/topo.png" class="topo" alt="topo" title="Voltar ao Topo"></a>
     </div>
